@@ -15,6 +15,13 @@ The dataset includes 2000 entries with the following columns:
 - `Gender` (Male, Female)
 - `Grades` (Target Variable)
 
+## 🛠 Requirements
+pandas
+
+numpy
+
+scikit-learn
+
 ## 🧹 Data Preprocessing
 
 1. **Label Encoding**: Categorical values (`Stress_Level`, `Gender`) encoded into numerical form.
@@ -48,19 +55,3 @@ sample_input = pd.DataFrame([{
 sample_scaled = scaler.transform(sample_input)
 predicted_grade = model.predict(sample_scaled)[0]
 print(f"Predicted Grade: {predicted_grade:.2f}")
-
-🛠 Requirements
-pandas
-
-numpy
-
-scikit-learn
-
-pip install pandas numpy scikit-learn
-
-📁 Files
-Student.csv – Source dataset
-
-CGPA.ipynb – Notebook with complete pipeline
-
-README.md – This file
